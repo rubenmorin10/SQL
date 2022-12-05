@@ -12,7 +12,6 @@ WHERE Product='iPhone'
 #3. Select the customer account numbers for all the orders that were placed in February. 
 SELECT acctnum
 FROM BIT_DB0.customers cust
-
 INNER JOIN BIT_DB0.FebSales Feb
 ON cust.order_id=FEB.orderid
 
@@ -72,3 +71,19 @@ WHERE Product like '%Batteries%'
 SELECT distinct Product, Price
 FROM BIT_DB0.FebSales 
 WHERE Price like '%.99'
+
+#13 List all the products sold in Los Angeles in February, and include how many of each were sold.
+SELECT product, SUM(quantity) as quantity
+FROM BIT_DB0.FebSales
+where location Like "%Los Angeles%"
+Group by product;
+
+#14 Which locations in New York received at least 3 orders in January, and how many orders did they each receive? (Hint: use HAVING).
+    
+#15 How many of each type of headphone were sold in February?
+    
+#16 What was the average amount spent per account in February? (Hints: For this question, we want the average amount spent / number of accounts, not the amount spent by each account. To multiply, you can use the * symbol, and to divide, you can use the / symbol.)
+    
+#17 What was the average quantity of products purchased per account in February? (Hint: just like question 3, we want the overall average, not the average for each account individually).
+    
+#18 Which product brought in the most revenue in January and how much revenue did it bring in total? 
