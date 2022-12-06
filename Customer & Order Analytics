@@ -79,11 +79,34 @@ where location Like "%Los Angeles%"
 Group by product;
 
 #14 Which locations in New York received at least 3 orders in January, and how many orders did they each receive? (Hint: use HAVING).
-    
+SELECT distinct location, Count(orderID)
+FROM BIT_DB0.JanSales
+Where location LIKE "%NY%"
+Group By location
+HAVING COUNT(orderID) > 3;
+
 #15 How many of each type of headphone were sold in February?
+SELECT SUM(quantity) as quantity, product
+FROM FebSales
+where Product Like '%headphone%' 
+group by product;
     
 #16 What was the average amount spent per account in February? (Hints: For this question, we want the average amount spent / number of accounts, not the amount spent by each account. To multiply, you can use the * symbol, and to divide, you can use the / symbol.)
-    
+SELECT avg(quantity*price) AS "Average Price"
+FROM BIT_DB0.FebSales Feb
+LEFT JOIN BIT_DB0.customers cust
+ON FEB.orderid=cust.order_id;
+
 #17 What was the average quantity of products purchased per account in February? (Hint: just like question 3, we want the overall average, not the average for each account individually).
-    
+select sum(quantity)/count(cust.acctnum)
+FROM BIT_DB0.FebSales Feb
+LEFT JOIN BIT_DB0.customers cust
+ON FEB.orderid=cust.order_id;    
+
 #18 Which product brought in the most revenue in January and how much revenue did it bring in total? 
+SELECT product, 
+sum(quantity*price)
+FROM BIT_DB0.JanSales 
+GROUP BY product
+ORDER BY sum(quantity*price) desc 
+LIMIT 1;
