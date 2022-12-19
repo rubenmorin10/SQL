@@ -1,0 +1,47 @@
+-- The office TV show information
+create table employee
+(
+Id int,
+first_name Text,
+last_name Text
+);
+
+select * from employee;
+
+Insert into employee (ID, first_name, last_name) Values (1, "Michael", "Scott");
+Insert into employee (ID, first_name, last_name) Values (2, "Pam", "Beesly");
+Insert into employee (ID, first_name, last_name) Values (3, "Dwight", "Schrute");
+Insert into employee (ID, first_name, last_name) Values (4, "Andy", "Bernard");
+
+create table Salary
+(
+Id int,
+Title Text,
+Salary_amount int
+);
+
+Insert into Salary (Id, Title, Salary_amount) Values (1, "Boss", 70000);
+Insert into Salary (Id, Title, Salary_amount) Values (2, "Secretary", 30000);
+Insert into Salary (Id, Title, Salary_amount) Values (3, "Assistant to the Regional Manager", 55000);
+Insert into Salary (Id, Title, Salary_amount) Values (4, "Salesman", 45000);
+Insert into Salary (Id, Title, Salary_amount) Values (5, "Co-Manager", 65000);
+
+select * from Salary;
+
+--Joining employee with their Salary
+Select employee.first_name, employee.last_name, Salary.Title, Salary.Salary_amount as Salary
+FROM Employee
+JOIN Salary
+ON employee.Id=Salary.Id;
+
+--Left Join
+Select *
+FROM Employee
+Left JOIN Salary
+ON employee.Id=Salary.Id;
+
+--Right Join
+Select *
+FROM Employee
+Right JOIN Salary
+ON employee.Id=Salary.Id;
