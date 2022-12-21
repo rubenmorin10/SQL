@@ -1,0 +1,148 @@
+-- Creating a data table 
+create table dog_name 
+(
+Name varchar(100),
+Frequency Int
+);
+
+-- Uploading the dog name data into your new table
+Insert into dog_name Values 
+("Unknown Dog Name", 1),
+("Emie", 1),
+("Jess", 91),
+("Style", 2),
+("Benny", 75),
+("Mifty", 1),
+("Jesse", 38),
+("Pat", 3),
+("Matilda Madeline",1),
+("Lily", 188),
+("Reggie", 46),
+("Chloe", 192),
+("Hanson",2),
+("Sebastian",33),
+('Maxwell',6),
+('Biddy',5),
+('Jack',322),
+('Anya',4),
+('Gizmo',112),
+('Shani',5),
+('Tigga',7),
+('Bess',20),
+('Delilah',27),
+('Bronson',28),
+('Pippi',28),
+('Max',507),
+('Russell',13),
+('Fred',38),
+('Lucky',76),
+('Aussie',11),
+('Matilda',63),
+('Ricky',11),
+('Isabella',28),
+('Lucy',398),
+('Molly',606),
+('Ryan',4),
+('Poppy',205),
+('Coco',419),
+('Milly',186),
+('Jewels',4),
+('Beau',110),
+('Holly',132),
+('Shadow',161),
+('Lilo',20),
+('Minnie',69),
+('Shiva',6),
+('Zoe',152),
+('Razz',8),
+('Bonnie',251),
+('Tara',24),
+('Jedda',29),
+('Buddy',485),
+('Roxy',332),
+('Diesel',174),
+('Malibu',15),
+('Spot',24),
+('Boston',69),
+('Bumba',1),
+('Ming Ling',1),
+('Ruby',489),
+('Suki',41),
+('Bella',970),
+('Tammy',25),
+('Ember',6),
+('Maggie',189),
+('Minky',6),
+('Sonny',47),
+('Choccy',2),
+('Bailey',242),
+('Cassandra',2),
+('Mia',229),
+('Humphrey',17),
+('Lash',2),
+('Bundy',118),
+('Lulu',201),
+('Sooty',59),
+('Ebony',65),
+('Dougal',23),
+('Pablo',36),
+('Tesa',3),
+('Sally',88),
+('Bob',66),
+('Princess',51);
+
+-- Creating a data table to receive the dataset: 
+	-- The 100 most common male and 100 most common female names in South Australia in 2019
+ Create Table baby_name 
+ (
+    Baby_Name VARCHAR(100), 
+    Frequency INT
+);
+
+INSERT INTO Dog_baby_name.baby_name VALUES ('CHARLOTTE',119),('AVA',112),('OLIVIA',103),('GRACE',93),('AMELIA',86),('WILLOW',86),('ISLA',83),('IVY',79),('SOPHIE',79),('MIA',69),('RUBY',68),('ELLA',67),('LUCY',66),('HARPER',65),('EVELYN',63),('CHLOE',59),('MATILDA',57),('ELSIE',54),('EMILY',54),('LILY',54),('SOPHIA',53),('ISABELLA',50),('ZOE',49),('MILA',48),('SCARLETT',48),('VIOLET',47),('ALICE',46),('GEORGIA',46),('EVIE',45),('HAZEL',43),('EVA',42),('HARRIET',42),('ARIA',40),('POPPY',39),('SIENNA',39),('AUDREY',36),('LAYLA',35),('ELLIE',34),('EMMA',34),('HANNAH',34),('ZARA',34),('IMOGEN',33),('EMILIA',32),('FRANKIE',32),('MILLIE',32),('AYLA',30),('FLORENCE',30),('MACKENZIE',29),('AURORA',28),('ELEANOR',28),('ISABELLE',28),('MAYA',28),('PENELOPE',28),('PEYTON',28),('SOFIA',28),('BILLIE',27),('LARA',27),('DAISY',26),('LUNA',26),('ABIGAIL',25),('ANNABELLE',25),('FREYA',25),('MAGGIE',25),('PHOEBE',25),('SUMMER',25),('CLAIRE',24),('QUINN',24),('ROSIE',24),('SADIE',24),('STELLA',24),('ELOISE',23),('JASMINE',23),('LOLA',23),('PIPER',23),('CHARLIE',22),('MADELINE',22),('MADISON',22),('SAVANNAH',22),('ADELINE',21),('LILLY',21),('AMBER',20),('EVERLY',20),('OLIVE',20),('RILEY',20),('THEA',20),('ADDISON',19),('ELIZA',19),('HALLIE',19),('PIPPA',19),('AALIYAH',18),('ANNA',17),('CHELSEA',17),('HEIDI',17),('INDIANA',17),('LILAH',17),('LYLA',17),('PAIGE',17),('SAGE',17),('SARAH',17),('ALEXANDRA',16),('OLIVER',152),('LEO',106),('WILLIAM',102),('JACK',101),('NOAH',101),('HENRY',99),('CHARLIE',94),('OSCAR',90),('HARVEY',81),('MASON',81),('HARRISON',79),('LUCAS',79),('MAX',77),('ELIJAH',74),('HUNTER',74),('LEVI',74),('LIAM',73),('ARCHER',71),('JAMES',71),('ALEXANDER',70),('HUDSON',70),('ARCHIE',68),('HARRY',67),('THOMAS',65),('ISAAC',63),('LUCA',63),('EDWARD',61),('HUGO',61),('ARLO',57),('RILEY',54),('THEODORE',53),('LOGAN',52),('LINCOLN',51),('CONNOR',50),('GEORGE',49),('XAVIER',48),('ETHAN',47),('JACOB',47),('SAMUEL',45),('CARTER',42),('JOSHUA',42),('LACHLAN',42),('PATRICK',42),('DARCY',41),('SEBASTIAN',41),('JORDAN',40),('ELI',39),('ARTHUR',38),('BENJAMIN',36),('SONNY',36),('KAI',35),('SPENCER',35),('RYDER',34),('ANGUS',33),('FINN',33),('ASHER',32),('JACKSON',32),('JAYDEN',32),('RORY',32),('OWEN',31),('JAXON',30),('AUSTIN',29),('EZRA',29),('RYAN',29),('CALEB',28),('LOUIS',28),('OLLIE',28),('ARI',27),('COOPER',27),('HAMISH',27),('JASPER',27),('PARKER',27),('LEWIS',26),('BEAU',25),('FLYNN',25),('JUDE',25),('TYLER',25),('FELIX',24),('REUBEN',24),('ASHTON',23),('DANIEL',23),('MICHAEL',23),('MUHAMMAD',23),('NATE',23),('NATHANIEL',23),('BLAKE',22),('FLETCHER',22),('AIDEN',21),('CHRISTOPHER',21),('GABRIEL',21),('MARCUS',21),('RIVER',21),('ZACHARY',21),('ALEX',20),('ALFRED',20),('BILLY',20),('ELLIOT',20),('LUKA',20),('LUKE',20),('MAXWELL',20);
+;
+
+Select * from baby_name;
+
+--######## USING THE DATA TO ANSWER OUR QUESTION #########
+-- Summing the number of names with 'Max' in them
+
+ -- Enter your name between the brackets
+SELECT SUM(Frequency) AS NUMBER_OF_DOGS
+FROM Dog_baby_name.dog_name			
+WHERE name LIKE '%MAX%';
+
+SELECT SUM(Frequency) AS NUMBER_OF_BABIES
+FROM Dog_baby_name.baby_name		
+WHERE Baby_name LIKE '%MAX%' 				
+
+-- Summing the number of names that are exactly 'Max'
+SELECT SUM(Frequency) AS NUMBER_OF_DOGS
+FROM Dog_baby_name.dog_name			
+WHERE Name = 'MAX';
+
+-- Checking what the dog names were that contained "Max"
+SELECT *
+FROM Dog_baby_name.dog_name			
+WHERE Name LIKE '%MAX%';
+
+-- But what about as a proportion of the dataset
+SELECT YOUR_NAME_DOG, TOTAL_DOG, 
+      100*(1.00*SUB.YOUR_NAME_DOG)/(1.00*SUB.TOTAL_DOG)                                    AS PERC_OF_DOG_NAMES
+     
+FROM (
+		SELECT SUM(CASE WHEN Name LIKE '%MAX%' THEN Frequency ELSE 0 END)      AS YOUR_NAME_DOG
+			 , SUM(FREQUENCY) 													AS TOTAL_DOG
+		FROM Dog_baby_name.Dog_name)                                           AS SUB
+;
+
+SELECT YOUR_NAME_BABY , TOTAL_BABY
+     , 100*(1.00*SUB.YOUR_NAME_BABY)/(1.00*SUB.TOTAL_BABY) 	                              AS PERC_OF_BABY_NAMES
+FROM (
+		SELECT SUM(CASE WHEN Baby_name LIKE '%MAX%' THEN Frequency ELSE 0 END) AS YOUR_NAME_BABY
+			 , SUM(FREQUENCY) 													AS TOTAL_BABY
+		FROM Dog_baby_name.Baby_name)                                          AS SUB
+;
+
+--######### RESULT #########
+-- THERE IS NO EVIDENCE TO SUGGEST THAT MAX IS MORE COMMONLY A DOGS NAME THAN A HUMAN NAME
